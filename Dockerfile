@@ -13,7 +13,7 @@ RUN cd /glusterfs && \
     ./autogen.sh
     
 RUN apt install -yq python2.7 python3
-RUN apt install -yq libxml2-dev
+RUN apt install -yq libxml2-dev liburcu-dev
     
 RUN cd /glusterfs && \    
     ./configure
