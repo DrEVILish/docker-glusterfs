@@ -5,7 +5,7 @@ RUN apt update && apt upgrade -y && \
 
 RUN git clone https://github.com/gluster/glusterfs /glusterfs && \
     cd /glusterfs && \
-    git checkout tags/v5.0rc1
+    git checkout tags/v4.1.5
 
 RUN cd /glusterfs && \
     ./autogen.sh && \    
