@@ -12,7 +12,7 @@ RUN apt install -yq flex libsqlite3-dev zlib1g-dev libacl1-dev uuid-dev bison
 RUN cd /glusterfs && \
     ./autogen.sh
     
-RUN apt install python27 pyton3
+RUN apt install python2.7 python3
     
 RUN cd /glusterfs && \    
     ./configure
