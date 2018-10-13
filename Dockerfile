@@ -6,7 +6,9 @@ RUN apt install -yq libtool
 RUN git clone https://github.com/gluster/glusterfs /glusterfs && \
     cd /glusterfs && \
     git checkout tags/v5.0rc1
-    
+
+RUN apt install -yq flex libsqlite3-dev zlib1g-dev libacl1-dev uuid-dev bison
+
 RUN cd /glusterfs && \
     ./autogen.sh
     
